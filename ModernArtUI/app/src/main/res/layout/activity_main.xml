@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:divider="@drawable/horizontal_divider"
+    android:showDividers="middle" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/cols"
+        android:layout_weight="1"
+        android:divider="@drawable/vertical_divider"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/col1"
+            android:layout_weight="2"
+            android:divider="@drawable/horizontal_divider"
+            android:showDividers="middle" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/box1"
+                android:layout_weight=".6"
+                android:background="#ffffeb3b" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/box2"
+                android:layout_weight=".4"
+                android:background="#fff5f5f5" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/box3"
+                android:layout_weight=".5"
+                android:background="#ff283593" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/col2"
+            android:layout_weight="1"
+            android:divider="@drawable/horizontal_divider"
+            android:showDividers="middle">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:divider="@drawable/vertical_divider"
+                android:showDividers="middle">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/box4"
+                    android:background="#fff44336" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:divider="@drawable/vertical_divider"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:divider="@drawable/horizontal_divider"
+                    android:showDividers="middle">
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/box6"
+                        android:background="#fff5f5f5"
+                        android:layout_weight="1"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:divider="@drawable/horizontal_divider"
+                    android:showDividers="middle">
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/box7"
+                        android:background="#fff5f5f5"
+                        android:layout_weight="2" />
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/box8"
+                        android:background="#ff5c6bc0"
+                        android:layout_weight="2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_gravity="center_horizontal|bottom" />
+</LinearLayout>
